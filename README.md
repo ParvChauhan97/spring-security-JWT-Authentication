@@ -1,0 +1,1 @@
+A secure Spring Boot application implementing Spring Security, JWT authentication, BCrypt password encryption, role-based authorization, MySQL database integration, and secure REST APIs with clean and modular backend architecture.
