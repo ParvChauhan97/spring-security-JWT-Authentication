@@ -12,5 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class helloController {
-  
+
+  AuthenticationManager authenticationManager;
 }
