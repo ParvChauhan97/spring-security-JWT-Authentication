@@ -19,6 +19,7 @@ public class helloController {
   @Autowired
   JwtUtils jwtUtils;
 
+  @GetMapping("/hello")
   public String SayHello() {
   }
 }
