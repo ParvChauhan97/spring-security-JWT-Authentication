@@ -16,5 +16,6 @@ public class helloController {
   @Autowired
   AuthenticationManager authenticationManager;
 
+  @Autowired
   JwtUtils jwtUtils;
 }
