@@ -18,4 +18,7 @@ public class helloController {
 
   @Autowired
   JwtUtils jwtUtils;
+
+  public String SayHello() {
+  }
 }
