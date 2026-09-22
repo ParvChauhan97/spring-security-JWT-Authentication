@@ -25,6 +25,6 @@ public class helloController {
   }
 
   public String sayAdminHello() {
-       
+        return "Hello, admin";
     }
 }
