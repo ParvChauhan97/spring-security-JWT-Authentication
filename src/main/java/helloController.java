@@ -24,6 +24,7 @@ public class helloController {
     return "Hello Security";
   }
 
+  @GetMapping("/admin/hello")
   public String sayAdminHello() {
         return "Hello, admin";
     }
