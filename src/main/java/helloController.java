@@ -31,5 +31,6 @@ public class helloController {
     }
 
   public String sayUserHello() {
+     return "Hello, User";
   }
 }
