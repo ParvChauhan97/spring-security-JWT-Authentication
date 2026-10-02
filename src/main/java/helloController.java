@@ -35,6 +35,6 @@ public class helloController {
      return "Hello, User";
   }
 
-  public String login() {
+  public String login(@RequestBody LoginRequest loginRequest) {
   }
 }
