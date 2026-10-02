@@ -34,4 +34,7 @@ public class helloController {
   public String sayUserHello() {
      return "Hello, User";
   }
+
+  public String login() {
+  }
 }
