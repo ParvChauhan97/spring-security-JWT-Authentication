@@ -29,4 +29,7 @@ public class helloController {
   public String sayAdminHello() {
         return "Hello, admin";
     }
+
+  public String sayUserHello() {
+  }
 }
