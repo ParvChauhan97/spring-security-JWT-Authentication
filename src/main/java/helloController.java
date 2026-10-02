@@ -35,6 +35,7 @@ public class helloController {
      return "Hello, User";
   }
 
+  @PostMapping("/signin")
   public String login(@RequestBody LoginRequest loginRequest) {
   }
 }
