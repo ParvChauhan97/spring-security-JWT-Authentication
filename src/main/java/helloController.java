@@ -30,6 +30,7 @@ public class helloController {
         return "Hello, admin";
     }
 
+  @GetMapping("/user/hello")
   public String sayUserHello() {
      return "Hello, User";
   }
