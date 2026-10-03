@@ -37,5 +37,7 @@ public class helloController {
 
   @PostMapping("/signin")
   public String login(@RequestBody LoginRequest loginRequest) {
+
+    Authentication authentication;
   }
 }
