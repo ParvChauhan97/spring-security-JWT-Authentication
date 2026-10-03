@@ -39,5 +39,8 @@ public class helloController {
   public String login(@RequestBody LoginRequest loginRequest) {
 
     Authentication authentication;
+     try{
+     } catch {
+     }
   }
 }
