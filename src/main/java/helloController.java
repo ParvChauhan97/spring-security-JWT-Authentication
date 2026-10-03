@@ -46,7 +46,9 @@ public class helloController {
                             loginRequest.getPassword()
                     )
             );
-     } catch(AuthenticationException e) {
+     } catch (AuthenticationException e) {
+        e.printStackTrace();
+            return "Could not Authenticate";
      }
   }
 }
