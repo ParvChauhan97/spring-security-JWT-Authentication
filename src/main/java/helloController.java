@@ -46,7 +46,7 @@ public class helloController {
                             loginRequest.getPassword()
                     )
             );
-     } catch {
+     } catch(AuthenticationException e) {
      }
   }
 }
