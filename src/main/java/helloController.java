@@ -51,4 +51,6 @@ public class helloController {
             return "Could not Authenticate";
      }
   }
+
+  SecurityContextHolder.getContext().setAuthentication(authentication);
 }
