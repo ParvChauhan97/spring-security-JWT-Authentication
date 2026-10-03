@@ -53,4 +53,5 @@ public class helloController {
   }
 
   SecurityContextHolder.getContext().setAuthentication(authentication);
+  UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 }
