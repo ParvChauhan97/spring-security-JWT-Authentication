@@ -18,5 +18,6 @@ import java.io.IOException;
 import java.util.List;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
-  
+
+  private JwtUtils jwtUtils;
 }
