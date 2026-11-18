@@ -29,7 +29,14 @@ public class AuthTokenFilter extends OncePerRequestFilter {
           String jwt = parseJwt(request);
 
           if(jwt != null && jwtUtils.validateJwtToken(jwt)) {
-            
+             System.out.println("JWT Token: " + jwt);
+                String username = jwtUtils.getUsernameFromToken(jwt);
+
+                Claims claims = jwtUtils.getAllClaims(jwt);
+                List<String> roles = claims.get("roles", List.class);
+                System.out.println("Roles: " + roles);
+
+                List<GrantedAuthority> authorities = List.of();
           }
         } catch (Exception e) {
             e.printStackTrace();
