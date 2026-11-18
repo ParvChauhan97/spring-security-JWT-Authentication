@@ -26,6 +26,11 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 
       System.out.println("AuthTokenFilter");
         try {
+          String jwt = parseJwt(request);
+
+          if(jwt != null && jwtUtils.validateJwtToken(jwt)) {
+            
+          }
         } catch (Exception e) {
             e.printStackTrace();
         }
