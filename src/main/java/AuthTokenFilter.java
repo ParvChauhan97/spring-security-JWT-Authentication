@@ -37,7 +37,7 @@ public class AuthTokenFilter extends OncePerRequestFilter {
                 System.out.println("Roles: " + roles);
 
                 List<GrantedAuthority> authorities = List.of();
-            if() {
+            if(roles != null) {
             }
             
           }
