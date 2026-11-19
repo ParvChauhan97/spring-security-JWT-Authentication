@@ -38,6 +38,10 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 
                 List<GrantedAuthority> authorities = List.of();
             if(roles != null) {
+              authorities = roles
+                            .stream()
+                            .map(role -> (GrantedAuthority) new SimpleGrantedAuthority(role))
+                            .toList();
             }
             
           }
