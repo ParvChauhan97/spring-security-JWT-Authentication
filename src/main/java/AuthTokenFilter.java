@@ -43,7 +43,12 @@ public class AuthTokenFilter extends OncePerRequestFilter {
                             .map(role -> (GrantedAuthority) new SimpleGrantedAuthority(role))
                             .toList();
             }
-            
+
+            UsernamePasswordAuthenticationToken authentication =
+                            new UsernamePasswordAuthenticationToken(
+                                    username,
+                                    null,
+                                    authorities);
           }
         } catch (Exception e) {
             e.printStackTrace();
